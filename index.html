@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <title>Главная</title>
+   <meta content='' name='keywords'>
+   <meta content='' name='description'>
+   <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+   <script src="assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+   <link href="assets/plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
+   <!--Loader-->
+   <link href="assets/plugins/loader/loader.css" rel="stylesheet">
+   <link type="text/css" href="assets/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+   <link type="text/css" href="libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+   <link type="text/css" href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <link type="text/css" href="libs/datepicker-bootstrap/datepicker.min.css" rel="stylesheet">
+   <link type="text/css" href="libs/datatables/datatables.min.css" rel="stylesheet">
+   <link type="text/css" href="libs/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+   <link type="text/css" href="libs/croppie/croppie.css" rel="stylesheet">
+   <link type="text/css" href="css/main.min.css" rel="stylesheet">
+   <link href="assets/css/my_style.css" rel="stylesheet">
+   <meta name="facebook-domain-verification" content="we9g8r6wu56d8uj2f2b7bt01r5ie9t" />
+</head>
+
+<body>
+   <div class="o-h">
+      <header class="page-header">
+         <div class="container page-header-container">
+            <div class="row jc-sb ai-c page-header-row gx-10">
+               <div class="col d-xl-n z-1">
+                  <button class="hamburger js-hamburger collapsed" type="button" data-toggle="collapse"
+                     data-target=".page-header-menu"><span class="hamburger-box"><span
+                           class="hamburger-inner"></span></span></button>
+               </div>
+               <div class="col-auto ta-c">
+                  <a href="https://5ka.ru/" target="_blank" rel="noopener"> <img src="img/logo_5ka.png"
+                        srcset="img/logo_5ka_2x.png 2x" alt="Hansa" class="logo-img_1" />
+                  </a>
+                  <a class="" href="https://www.savushkin.by/brendy/brest-litovsk/" target="_blank" rel="noopener"> <img class="logo-img_1"
+                        src="img/logo_brest.png" srcset="img/logo_brest_2x.png 2x" alt="Hansa" />
+                  </a>
+               </div>
+               <div class="col-xl-auto page-header-menu collapse">
+                  <div class="row page-header-nav jc-c mt-10 j">
+                     <div class="page-header-nav__item"><a class="header-nav__link js-scroll-to"
+                           href="#front">Главная</a>
+                     </div>
+                     <div class="page-header-nav__item"><a class="header-nav__link js-scroll-to"
+                           href="#rules">Правила</a>
+                     </div>
+                     <div class="page-header-nav__item"><a class="header-nav__link js-scroll-to"
+                           href="#winners">Победители</a>
+                     </div>
+                     <div class="page-header-nav__item"><a class="header-nav__link js-scroll-to" href="#qa">Вопросы и
+                           ответы</a></div>
+                  </div>
+               </div>
+               <div class="col-xl-auto col ta-r">
+
+                  <a class="btn btn-gold page-header-enter-btn" href="#modal-enter" data-toggle="modal"><img
+                        class="img-fluid mr-xl-10" src="img/icons/icon_user.svg" alt="icon" width="15" /><span
+                        class="page-header-enter-btn-title">Личный
+                        кабинет</span></a>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- Первый экран -->
+      <div class="front" id="front">
+         <div class="container">
+            <div class="front-gradient"></div>
+            <div class="front-label">с 14 ноября 2022 по 25 декабря 2022</div>
+            <div class="front-title">Сыромагия</div>
+            <div class="front-text">Новогодние традиции с сыром Брест-Литовск</div>
+            <div class="ta-c pos-r">
+               <a class="btn btn-primary btn-lg pos-r z-1" href="#modal-enter" data-toggle="modal">Учавствовать в
+                  акции</a>
+            </div>
+         </div>
+         <img class="front-img d-sm-b d-n" srcset="img/static/front_img1.png 2x" src="img/static/front_img.png"
+            alt="img" />
+         <img class=" front-img-mob d-sm-n " srcset="img/bg/mob_front_bg_2x.png 2x" src="img/bg/mob_front_bg.png"
+            alt="img" />
+      </div>
+      <!-- Правила -->
+      <div class="rules pos-r " id="rules">
+         <div class="container pos-r">
+            <div class="row jc-c ai-c rules-title-wrapper gx-lg-30 gx-14">
+               <div class="col-auto">
+                  <div class="rules-title title mx-5">Правила акции</div>
+               </div>
+            </div>
+         </div>
+         <div class="px-15 pos-r z-10">
+            <div class="row jc-c">
+               <div class="col-auto">
+                  <div class="rules-box mb-lg-30 mb-50">
+                     <div class="rules-box__title">Регистрируй</div>
+                     <img class="img-fluid rules-box__arrow-1" src="img/static/step_1.png"
+                        srcset="img/static/step_1_2x.png 2x" alt="1" /><img class="img-fluid rules-box__img"
+                        src="img/static/rules_1.svg" alt="1" />
+                     <!-- <div class="rules-box__title">Шаг 1</div> -->
+                     <div class="rules-box__text">Купите любой продукт
+                        <a href="upload/products.pdf" class="link-red-dot" target="_blank">из
+                           списка</a>
+                        в магазине ТС «Пятёрочка»
+                     </div>
+                  </div>
+               </div>
+               <div class="col-auto">
+                  <div class="rules-box mb-lg-30 mb-50">
+                     <img class="img-fluid rules-box__arrow-1" src="img/static/step_2.png"
+                        srcset="img/static/step_2_2x.png 2x" />
+                     <img class="img-fluid rules-box__img" src="img/static/rules_2.svg" alt="2" />
+                     <div class="rules-box__title">Регистрируй</div>
+                     <div class="rules-box__text">
+                        чеки в личном кабинете на промо-сайте
+                        <a href="upload/products.pdf" class="link-red-dot" target="_blank">
+                           promobrest.ru</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-auto">
+                  <div class="rules-box mb-lg-30 mb-25">
+                     <img class="img-fluid rules-box__arrow-1" src="img/static/step_3.png"
+                        srcset="img/static/step_3_2x.png 2x" />
+                     <img class="img-fluid rules-box__img" src="img/static/rules_3.svg" alt="3" />
+                     <div class="rules-box__title">Получай </div>
+                     <div class="rules-box__text">Гарантированные призы.
+                        участвуй в розыгрышах и выигрывай ценные призы
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="ta-c pt-20 pos-r"><a class="btn-download" href="upload/rules.pdf" target="_blank">
+                  <img class="img-fluid mr-15" src="img/icons/icon_download.svg" alt="icon" width="48" />Полные правила акции </a></div>
+         </div>
+         <img class="rules-bg d-sm-b d-n" srcset="img/bg/rules_bg_2x.png 2x" src="img/bg/rules_bg.png" alt="img" />
+
+      </div>
+
+      <!-- Призы -->
+      <div class="prizes pos-r">
+         <div class="container pos-r">
+            <div class="prizes-title title">Призы</div>
+         </div>
+         <div class="row jc-c">
+            <div class="col-auto">
+               <div class="prizes-box">
+                  <div class="prizes-box__title">Гарантированные </div>
+                  <img class="img-fluid " src="img/static/garant.png" srcset="img/static/garant_2x.png 2x" />
+                  <div class="prizes-box__text">10, 15, 20, 25, 30, 35, 40, 45, 50 <br>
+                     рублей на счет телефона</div>
+               </div>
+            </div>
+            <img class="img-fluid mr-xl-10" src="img/razd.svg" alt="icon" height="200" />
+            <div class="col-auto">
+               <div class="prizes-box">
+                  <div class="prizes-box__title">Еженедельные</div>
+                  <img class="img-fluid " src="img/static/every_day.png" srcset="img/static/every_day_2x.png 2x" />
+                  <div class="prizes-box__text">250 руб на счет телефона
+                  </div>
+               </div>
+            </div>
+            <img class="img-fluid mr-xl-10" src="img/razd.svg" alt="icon" height="200" />
+            <div class="col-auto">
+
+               <div class="prizes-box">
+                  <div class="prizes-box__title">Суперпризы</div>
+                  <img class="img-fluid " src="img/static/super.png" srcset="img/static/super_2x.png 2x" />
+                  <div class="prizes-box__text">50 000, 100 000 или
+                     250 000 рублей
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="ta-c pt-20 pos-r"><a class="btn  btn-white btn-lg pos-r z-1" href="upload/rules.pdf"
+               target="_blank">Участвовать в акции</a></div>
+      </div>
+
+      <!-- Победители-->
+      <div class="winners pos-r" id="winners">
+         <div class="row jc-c ai-c gx-lg-30 gx-14 mb-md-45 mb-30">
+            <div class="col-auto">
+               <div class="rules-title title mx-5">Победители</div>
+            </div>
+         </div>
+         <div class="container pos-r">
+            <div class="row  ta-c jc-c mb-lg-55 mb-40 gx-lg-0 gx-10">
+               <div class="row winners-nav ta-c jc-c mb-lg-55 mb-40 gx-lg-0 gx-10">
+                  <div class="col-sm-auto winners-nav__item"><a class="winners-nav__link active" href="#"
+                        data-prize="daily">Ежедневные</a></div>
+                  <div class="col-sm-auto winners-nav__item"><a class="winners-nav__link" href="#"
+                        data-prize="weekly">Еженедельные</a></div>
+                  <div class="col-sm-auto winners-nav__item"><a class="winners-nav__link" href="#"
+                        data-prize="super">Суперприз</a></div>
+               </div>
+               <div class="winner-search ">
+                  <input id="searchphone" class="winner-search__control mask-phone form-control" type="text"
+                     placeholder="Поиск по номеру телефона">
+                  <button class="winner-search__btn btn btn-primary" onClick="return searchWinner();">
+                     <img class="img-fluid" src="img/icons/icon_search.svg" alt="Поиск" width="" />
+                  </button>
+               </div>
+            </div>
+            <div class="table-responsive winners-table-wrapper">
+               <table id="tableWinners" class="g-table table">
+                  <thead>
+                     <tr>
+                        <th>Дата розыгрыша </th>
+                        <th>Ф. И. О.</th>
+                        <th>Номер телефона</th>
+                        <th>Приз</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+               </table>
+            </div>
+            <script>
+               $('.winners-nav .winners-nav__link').on('click', '', function (e) {
+                  e.preventDefault();
+                  selectPrize(e.target);
+                  searchWinner(e.target);
+               });
+
+               $(function () {
+                  searchWinner();
+               });
+
+               function selectPrize(obj) {
+                  $('.winners-nav .winners-nav__link').removeClass('active');
+                  $(obj).addClass('active');
+
+                  return false;
+               };
+
+               function searchWinner() {
+                  $('#tableWinners').DataTable({
+                     "destroy": true,
+                     "ajax": {
+                        "url": "data-winners",
+                        "type": "POST",
+                        "data": { phone: $('#searchphone').val(), prize_type: $('.winners-nav .winners-nav__link.active').data('prize') },
+                        "dataSrc": ""
+                     },
+                     "iDisplayLength": 8,
+                     "sDom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center g-pagination"ip>>>'
+                  });
+
+                  return false;
+               }
+
+            </script>
+         </div>
+         <img class="winners-bg d-sm-b d-n" srcset="img/bg/winner_bg_2x.png 2x" src="img/bg/winner_bg.png" alt="img" />
+
+      </div>
+      <div class="qa-wrapper" id="qa">
+         <div class="qa-inner pb-md-40 pb-30">
+            <div class="row jc-c ai-c gx-lg-30 gx-14 mb-md-45 mb-30">
+
+               <div class="col-auto">
+                  <div class="qa-title title  lh-100">Ответы на вопрос </div>
+               </div>
+            </div>
+            <div class="container pos-r">
+               <div class="row">
+                  <div id="faq" class="col-lg-6 mb-lg-0 mb-40">
+                     <div class="qa-box-wrapper" id="qa">
+                        <div class="qa-box-scroll">
+                           <div class="qa-box">
+                              <a class="qa-box-question " href="#qa-collapse-1" data-toggle="collapse">Кто является
+                                 Организатором
+                                 Акции?</a>
+                              <div class="collapse qa-collapse show" id="qa-collapse-1" data-parent="#qa">
+                                 <div class="qa-box-answer">АО «Оригинал»"</div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-2" data-toggle="collapse">Что
+                                 нужно сделать,
+                                 чтобы принять участие в Акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-2" data-parent="#qa">
+                                 <div class="qa-box-answer">В период с 14 ноября 2022
+                                    года по 25 декабря 2022 г.:<br>
+                                    1. Приобрести майонез «Брест-Литовск» в магазине
+                                    «Пятерочка».<br>
+                                    2. Зарегистрироваться в Акции через сайт,
+                                    получить пароль в СМС.<br>
+                                    3. В личном кабинете или через чат-бот
+                                    зарегистрировать чек.<br>
+                                    4. После подтверждения чека за каждую упаковку
+                                    акционной продукции в ЛК автоматически
+                                    формируется заявка на розыгрыши призов.
+                                    <br>
+                                    С подробным описанием механики Акции можно
+                                    ознакомиться в разделе 8 Правил Акции.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-3" data-toggle="collapse">Какова
+                                 территория
+                                 проведения Акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-3" data-parent="#qa">
+                                 <div class="qa-box-answer">Магазины «Пятерочка»,
+                                    территория проведения Акции - Российская
+                                    Федерация (кроме г. Санкт-Петербурга,
+                                    Ленинградской области, Мурманской области,
+                                    Республики Карелия, Псковской области,
+                                    Новгородской области и Калининградской области).
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-4" data-toggle="collapse">Какие
+                                 сроки
+                                 проведения Акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-4" data-parent="#qa">
+                                 <div class="qa-box-answer">Период регистрации
+                                    участников и чеков – с 14 ноября 2022 года
+                                    по 25 декабря 2022 года.<br>
+                                    Общий период проведения, включая период
+                                    вручения призов – с 14 ноября 2022 года по
+                                    31 января 2023 года.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-5" data-toggle="collapse">Какой
+                                 номер
+                                 телефона горячей линии Акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-5" data-parent="#qa">
+                                 <div class="qa-box-answer">Телефон горячей линии
+                                    8-800-511-01-71
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-6" data-toggle="collapse">Какой
+                                 адрес почты
+                                 обратной связи?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-6" data-parent="#qa">
+                                 <div class="qa-box-answer">info@promobrest.ru
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-8" data-toggle="collapse">Кто
+                                 может принять
+                                 участие в Акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-8" data-parent="#qa">
+                                 <div class="qa-box-answer">Участниками Акции могут
+                                    являться покупатели майонеза «Брест-Литовск» в
+                                    розничных торговых точках магазинов «Пятерочка»,
+                                    участвующих в Акции, дееспособные физические
+                                    лица, достигшие возраста 18 лет Граждане
+                                    Российской Федерации, постоянно проживающие на
+                                    территории Российской Федерации."
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-9" data-toggle="collapse">Где
+                                 можно купить акционную
+                                 продукцию торговой марки «Брест-Литовск»? Какая
+                                 продукция участвует в Акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-9" data-parent="#qa">
+                                 <div class="qa-box-answer">В Акции принимают участие
+                                    майонезы торговой марки "Брест-Литовск",
+                                    реализуемая на территории Российской Федерации в
+                                    магазинах торговой сети «Пятерочка». Полный
+                                    список акционной продукции размещен в правилах
+                                    акции в пункте 4.1.</div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-10" data-toggle="collapse">Можно
+                                 ли
+                                 зарегистрироваться под несколькими номерами
+                                 телефонов?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-10" data-parent="#qa">
+                                 <div class="qa-box-answer">Участник имеет право
+                                    зарегистрироваться на сайте Акции только один
+                                    раз за всё время проведения Акции. Не
+                                    допускаются регистрации с дублированием
+                                    информации в различных личных кабинетах и/или
+                                    любым иным искажением информации.</div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-11" data-toggle="collapse">Как
+                                 зарегистрироваться в Акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-11" data-parent="#qa">
+                                 <div class="qa-box-answer">Необходимо приобрести
+                                    Акционную продукцию торговой марки
+                                    «Брест-Литовск» в магазине «Пятерочка», который
+                                    участвует в Акции<br>
+                                    Осуществить регистрацию на сайте promobrest.ru.
+                                    Для регистрации на сайте Акции необходимо
+                                    заполнить регистрационную форму с указанием
+                                    следующих данных:
+                                    • Фамилия<br>
+                                    • Имя<br>
+                                    • Отчество<br>
+                                    • Дата рождения<br>
+                                    • Город проживания<br>
+                                    • Пол<br>
+                                    • Номер мобильного телефона<br>
+                                    • E-mail<br>
+                                    Галочка в пунктах:<br>
+                                    •Согласие с Пользовательским соглашением и
+                                    политикой конфиденциальности;<br>
+                                    •Согласие с Правилами Акции;<br>
+                                    •Согласие на обработку персональных данных
+                                    •Мне уже есть 18 лет<br>
+                                    Получить на указанный номер мобильного телефона
+                                    SMS сообщение от отправителя promobrest c
+                                    текстом: Вы стали участником нашей Акции! Логин:
+                                    *********** Пароль: ******.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-12" data-toggle="collapse">Можно
+                                 ли поменять
+                                 номер телефона, если я неправильно его указал?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-12" data-parent="#qa">
+                                 <div class="qa-box-answer">Вы можете направить запрос
+                                    на изменение номера телефона в форму обратной
+                                    связи. Организатор рассмотрит обращение в
+                                    индивидуальном порядке.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-13" data-toggle="collapse">Как
+                                 зарегистрировать чек?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-13" data-parent="#qa">
+                                 <div class="qa-box-answer">Для регистрации чека через
+                                    Личный кабинет на сайте Акции необходимо:
+                                    загрузить фотографию чека;<br>
+                                    выделить область с QR-кодом*;<br>
+                                    *в случае, когда распознавание по QR-коду не
+                                    осуществляется, необходимо заполнить параметры
+                                    чека в ручном режиме:<br>
+                                    • дата покупки;<br>
+                                    • время покупки;<br>
+                                    • сумма покупки (Итого);<br>
+                                    • ФН;<br>
+                                    • ФД;<br>
+                                    • ФП (ФПД);<br>
+                                    нажать на кнопку «Зарегистрировать чек».<br>
+                                    Изображение чека должно быть четким и
+                                    читабельным. Тип файла: JPEG, JPG, размер не
+                                    более 5 Мб.<br>
+                                    Не допускаются к участию изображения, не
+                                    являющиеся фотографиями (скриншоты, оттиски,
+                                    картинки, компьютерная графика, фотомонтаж,
+                                    электронные чеки).<br>
+                                    Чек должен быть сфотографирован полностью,
+                                    включая верхний и нижний край чека, изображение
+                                    чека должно быть вертикально ориентировано.
+                                    Фотографировать чек необходимо под прямым углом.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-14" data-toggle="collapse">Сколько
+                                 чеков
+                                 можно зарегистрировать в Акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-14" data-parent="#qa">
+                                 <div class="qa-box-answer">Участник может
+                                    зарегистрировать в Акции неограниченное
+                                    количество чеков.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-15" data-toggle="collapse">Нужно
+                                 ли
+                                 сохранять чеки?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-15" data-parent="#qa">
+                                 <div class="qa-box-answer">Да, необходимо сохранить
+                                    оригинал кассового чека до конца Акции.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-16" data-toggle="collapse">Как
+                                 формируется
+                                 заявка на розыгрыш?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-16" data-parent="#qa">
+                                 <div class="qa-box-answer">Заявка на розыгрыш
+                                    формируется автоматически за каждую упаковку
+                                    акционной продукции в подтвержденных чеках.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-17" data-toggle="collapse">Какие
+                                 призы
+                                 разыгрываются в Акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-17" data-parent="#qa">
+                                 <div class="qa-box-answer">Гарантированные призы:<br>
+                                    10 рублей на счет телефона<br>
+                                    15 рублей на счет телефона<br>
+                                    20 рублей на счет телефона<br>
+                                    25 рублей на счет телефона<br>
+                                    30 рублей на счет телефона<br>
+                                    35 рублей на счет телефона<br>
+                                    40 рублей на счет телефона<br>
+                                    45 рублей на счет телефона<br>
+                                    50 рублей на счет телефона<br>
+                                    55 рублей на счет телефона<br>
+                                    Еженедельно разыгрывается:<br>
+                                    250 рублей на счет телефона<br>
+                                    Суперпризы:<br>
+                                    50 000 рублей на банковский счет<br>
+                                    100 000 рублей на банковский счет<br>
+                                    250 000 рублей на банковский счет<br>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-18" data-toggle="collapse">Как я
+                                 узнаю, что
+                                 выиграл Приз?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-18" data-parent="#qa">
+                                 <div class="qa-box-answer">Победители будут
+                                    опубликованы сайте Акции в разделе «Победители»,
+                                    в Личном кабинете победителя в разделе «Мои
+                                    призы»
+                                    и путем отправки СМС сообщения Победителю
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-19" data-toggle="collapse">Сколько
+                                 призов
+                                 можно выиграть за все время акции?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-19" data-parent="#qa">
+                                 <div class="qa-box-answer">За весь период Акции
+                                    Участник может получить каждый Гарантированный
+                                    приз по 3 раза, Еженедельный приз – не более 12
+                                    раз, один из Суперпризов.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-20" data-toggle="collapse">Когда я
+                                 смогу
+                                 получить призы?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-20" data-parent="#qa">
+                                 <div class="qa-box-answer">Гарантированные и
+                                    Еженедельные призы перечисляются на счет
+                                    мобильного телефона, который указан при
+                                    регистрации, Суперпризы перечисляются по
+                                    реквизитам банковской карты.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-21" data-toggle="collapse">Нужно
+                                 ли будет
+                                 оплачивать налоги с призов?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-21" data-parent="#qa">
+                                 <div class="qa-box-answer">Призерам Акции не
+                                    потребуется заполнять налоговые декларации или
+                                    платить налог, все обязательства и расходы берет
+                                    на себя Организатор Акции.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-22" data-toggle="collapse">Зачем
+                                 вводить
+                                 свои личные данные?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-22" data-parent="#qa">
+                                 <div class="qa-box-answer">Персональные данные нужны
+                                    для уплаты налога Заказчиком за полученные
+                                    Участником Призы, общения с участниками в рамках
+                                    Акции.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-23" data-toggle="collapse">А не
+                                 разгласите
+                                 ли Вы мои данные?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-23" data-parent="#qa">
+                                 <div class="qa-box-answer">Организатор Акции не вправе
+                                    предоставлять информацию об Участнике Акции
+                                    третьим лицам, за исключением случаев,
+                                    предусмотренных законодательством Российской
+                                    Федерации.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-24" data-toggle="collapse">Как
+                                 отозвать свои
+                                 данные?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-24" data-parent="#qa">
+                                 <div class="qa-box-answer">Отозвать свои данные Вы
+                                    можете путем направления письменного заявления
+                                    Почтой России ценным письмом с описью вложения
+                                    по почтовому адресу Организатора, что влечет
+                                    автоматическое прекращение участия в Акции лица,
+                                    отозвавшего свои персональные данные.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-25" data-toggle="collapse">Как
+                                 связаться с
+                                 Организатором?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-25" data-parent="#qa">
+                                 <div class="qa-box-answer">С Организатором Вы можете
+                                    связаться, заполнив форму Обратной связи на
+                                    сайте Акции, или отравив электронное письмо на
+                                    info@promobrest.ru Организатор предоставит ответ
+                                    в течение 3 (трех) рабочих дней.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-26" data-toggle="collapse">По
+                                 какой причине
+                                 мне могут отказать в получении приза?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-26" data-parent="#qa">
+                                 <div class="qa-box-answer">Организатор лишает
+                                    претендента права стать обладателем Приза и
+                                    вправе выбрать другого Получателя Приза в
+                                    случае, если Участник, претендующий на получение
+                                    Приза:<br>
+                                    • не заполнил форму победителя в течение 2-х
+                                    календарных дней с даты уведомления;<br>
+                                    • предоставил в форме победителя неполные или
+                                    некорректные данные;<br>
+                                    • мобильный телефон<br>
+                                    отключен/заблокирован/недоступен;<br>
+                                    • отказался предоставить сведения для доставки
+                                    Приза, подписать, при необходимости, согласие на
+                                    обработку персональных данных и/или согласие на
+                                    доставку Приза, а также акт приема-передачи
+                                    Приза;<br>
+                                    • нарушил какие-либо положения Правил Акции<br>
+                                    • отказался предоставить уточняющую информацию
+                                    или данные (дополнительные фотографии чеков или
+                                    прочие данные, позволяющие подтвердить факт
+                                    совершения покупки и выполнения других условий
+                                    Правил Акции), запрашиваемые Организатором в
+                                    случае возникновения подозрений в нарушении
+                                    Участником Правил Акции.<br>
+                                    Организатор вправе отказать в выдаче призов тем
+                                    Участникам, чьи анкетные данные не были
+                                    заполнены должным образом (была введена неполная
+                                    или некорректная информация).
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qa-box">
+                              <a class="qa-box-question collapsed" href="#qa-collapse-27" data-toggle="collapse">Какие
+                                 данные мне
+                                 необходимо предоставить для получения призов?</a>
+                              <div class="collapse qa-collapse " id="qa-collapse-27" data-parent="#qa">
+                                 <div class="qa-box-answer">Участникам, чья общая
+                                    стоимость Призов превысит 4 000 необходимо в
+                                    течение 2 (двух) календарных дней с даты
+                                    уведомления заполнить специальную Форму
+                                    победителя, в Личном кабинете на Сайте Акции. В
+                                    Форме победителя необходимо указать следующие
+                                    данные:<br>
+                                    • фамилия, имя, отчество;<br>
+                                    • дата рождения;<br>
+                                    • серия, номер паспорта гражданина Российской
+                                    Федерации, дата его выдачи, наименование
+                                    выдавшего его органа, а также копии страниц
+                                    паспорта, содержащие данные сведения;<br>
+                                    • сведения о месте регистрации, согласно
+                                    паспорту, а также копии страниц паспорта,
+                                    содержащие данные сведения;<br>
+                                    Скан-копию свидетельства ИНН о постановке на
+                                    учет физического лица в налоговом органе.
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="qa-form ml-xl-30">
+                        <div class="qa-form__title">Нет ответа на ваш&nbsp;вопрос?</div>
+                        <div class="qa-form__text">Отправь нам сообщение и мы обязательно
+                           ответим!</div>
+                        <form id="formFeedback" method="post" action="https://www.priz-maheev.ru/api/feedback/save"
+                           class="ajax validate">
+
+                           <div class="form-group form-group_white">
+                              <input class="js-input form-control validate" type="text" name="name" value="">
+                              <label class="form-label">Ваш имя</label>
+                           </div>
+
+                           <div class="form-group form-group_white">
+                              <input class="js-input form-control validate" type="text" name="email" value="">
+                              <label class="form-label">Ваш e-mail</label>
+                           </div>
+                           <div class="form-group form-group_white">
+                              <textarea class="js-input form-control form-control_text validate"
+                                 name="quest"></textarea>
+                              <label class="form-label">Ваше сообщение</label>
+                           </div>
+                           <label class="checkbox">
+                              <input class="checkbox__input" type="checkbox" name="confirm1"><span
+                                 class="checkbox__text ">Ознакомлен и согласен <a href="upload/Terms of use.pdf"
+                                    target="_blank" class="link-brown">пользовательским
+                                    соглашением</a> и&nbsp;<a href="upload/Privacy Policy.pdf" target="_blank"
+                                    class="link-brown">политикой
+                                    конфиденциальности</a></span>
+                           </label>
+                           <button type="submit" class="btn btn-white btn-lg">Отправить
+                              вопрос</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <img class="answer_bg d-sm-b d-n" srcset="img/bg/answer_bg_2x.png 2x" src="img/bg/answer_bg.png" alt="img" />
+         </div>
+      
+      </div>
+   </div>
+   <footer>
+      <div class="page-footer">
+         <div class="container pos-r">
+            <div class="row jc-c ai-c mb-md-45 ta-c mb-md-30 mb-20">
+             
+               <div class="col-md-3"><a class="link-red page-footer-link"
+                     href="mailto: help@priz-maheev.ru">info@promobrest.ru </a></div>
+                     <div class="col-md-6"><a class="page-footer-phone" href="tel:8800511098171">
+                        8(800)511 0981 71 </a>
+                     </div>
+               <div class="col-md-3"><a class="btn-download" href="upload/rules.pdf" target="_blank">
+                     <img class="img-fluid mr-15" src="img/icons/icon_download.svg" alt="icon" width="48" />Правила акции </a></div>
+            </div>
+            <div class="page-footer-text">Акция проводится на территории Российской Федерации в розничной торговой сети "Пятерочка". Период регистрации чеков: с 14.11.2022 по 25.12.2022 по московскому времени. Организатором Акции является АО «Оригинал». Информация об организаторе Акции, правилах ее проведения, товарах-участниках Акции, количестве призов по результатам Акции, сроках, месте и порядке их получения размещена на сайте акции https://promobrest.ru/</div>
+          
+         </div>
+         <img class="footer-img d-sm-b d-n" srcset="img/bg/footer_bg.png 2x" src="img/bg/footer_bg.png"
+         alt="img" />
+      </div>
+   </footer>
+   <div class="modal" id="modal-reg">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-body">
+               <button class="close " type="button" data-dismiss="modal" aria-label="Close"><span
+                     aria-hidden="true"></span></button>
+               <div class="modal-title">Регистрация</div>
+               <form id="formReg" action="https://www.priz-maheev.ru/api/user/registration" class="ajax validate"
+                  method="post">
+                  <input type="hidden" name="country" value="1" />
+                  <input type="hidden" name="region" />
+                  <input type="hidden" name="area" />
+                  <input type="hidden" name="settlement" />
+                  <input type="hidden" name="addr" />
+                  <input type="hidden" name="token" value="" />
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="form-group form-group_beige mb-24">
+                           <input class="form-control js-input validate" type="text" name="fam">
+                           <div class="form-label">Фамилия</div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="form-group form-group_beige mb-24">
+                           <input class="form-control js-input validate" type="text" name="im">
+                           <div class="form-label">Имя</div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="form-group form-group_beige mb-24">
+                           <input class="form-control js-input validate" type="text" name="ot">
+                           <div class="form-label">Отчество</div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="row jc-c input-row ai-c gx-14">
+                           <div class="col-auto">Пол:</div>
+                           <div class="col-auto">
+                              <label class="checkbox">
+                                 <input class="checkbox__input" type="radio" name="sex" value="t"><span
+                                    class="checkbox__text">Муж.</span>
+                              </label>
+                           </div>
+                           <div class="col-auto">
+                              <label class="checkbox">
+                                 <input class="checkbox__input" type="radio" name="sex" value="f"><span
+                                    class="checkbox__text">Жен.</span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="form-group form-group_beige mb-24">
+                           <input class="form-control js-input validate" type="text" data-toggle="datepicker"
+                              name="birthday">
+                           <div class="form-label">Дата рождения</div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="form-group form-group_beige mb-24">
+                           <input class="form-control js-input validate" type="text" name="city">
+                           <div class="form-label">Город проживания</div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="form-group form-group_beige mb-20">
+                           <input class="form-control mask-phone js-input validate" type="tel" name="phone">
+                           <div class="form-label">Номер телефона</div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="form-group form-group_beige mb-20">
+                           <input class="form-control js-input validate" type="text" name="email">
+                           <div class="form-label">E-mail</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="mb-5">
+                     <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="confirm1"><span
+                           class="checkbox__text c-gray">Ознакомлен и согласен <a href="upload/Terms%20of%20use.pdf"
+                              target="_blank" class="link-brown">пользовательским соглашением</a> и <a
+                              href="upload/Privacy%20Policy.pdf" target="_blank" class="link-brown">политикой
+                              конфиденциальности</a></span>
+                     </label>
+                  </div>
+                  <div class="mb-5">
+                     <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="confirm2"><span
+                           class="checkbox__text c-gray">Ознакомлен и согласен с <a href="upload/rules.pdf"
+                              target="_blank" class="link-brown">правилами акции</a></span>
+                     </label>
+                  </div>
+                  <div class="mb-5">
+                     <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="confirm3"><span
+                           class="checkbox__text c-gray">Даю свое согласие на обработку
+                           персональных данных</span>
+                     </label>
+                  </div>
+                  <div class="mb-5">
+                     <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="confirm4"><span
+                           class="checkbox__text c-gray">Мне уже есть 18 лет</span>
+                     </label>
+                  </div>
+                  <div class="pt-md-30 pt-20">
+                     <button type="submit" class="btn btn-primary btn-lg modal-btn">Зарегистрироваться</button>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <div class="modal" id="modal-success">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+            <div class="modal-body pos-r"><img class="img-fluid modal-success-img"
+                  src="img/static/modal_success_img.png" alt="img" />
+               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                     aria-hidden="true"></span></button>
+               <div class="modal-title modal-title_med ta-c pt-sm-50 pt-60">Поздравляем вас!<br> Вы
+                  зарегистрировались в&nbsp;акции</div>
+               <div class="text-gray fz-14 ta-c mb-30">На указанный вами телефон (<span id="mobilePhone"></span>)
+                  отправлен пароль для доступа в личный кабинете</div>
+               <div class="ta-c">
+                  <btn class="btn btn-primary btn-lg" data-dismiss="modal">Хорошо!</btn>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal custom" id="modal-enter">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-body">
+               <button class="close close_icon" type="button" data-dismiss="modal" aria-label="Close"><span
+                     class=" close_icon" aria-hidden="true"></span></button>
+               <div class="modal-title">Вход </div>
+               <form method="post" action="https://www.priz-maheev.ru/api/user/auth" id="formAuth"
+                  class="ajax validate">
+                  <div class="form-group form-group_beige mb-20">
+                     <input class="form-control mask-phone js-input validate" type="tel" name="login">
+                     <div class="form-label">Номер телефона</div>
+                  </div>
+                  <div class="form-group form-group_beige mb-24">
+                     <input class="form-control js-input validate" type="password" name="passwd">
+                     <div class="form-label">Пароль</div><a
+                        class="js-modal form-control-link link-red fz-13 pos-a r-0 mr-15" href="#modal-recovery">Забыли
+                        пароль? </a>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg modal-btn">Войти</button>
+               </form>
+               <div class="lh-120 c-gray pt-15 pt-sm-25">Если Вы впервые на сайте, то Вам необходимо <a
+                     class="link-red js-modal" href="#modal-reg">Зарегистрироваться</a></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="modal" id="modal-recovery">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-body">
+               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                     aria-hidden="true"></span></button>
+               <div class="modal-title modal-title_small">Восстановление пароля</div>
+
+               <form id="formRestore" class="ajax validate" method="post"
+                  action="https://www.priz-maheev.ru/api/user/restorePassword">
+
+                  <div class="form-group form-group_beige mb-20">
+                     <input class="form-control mask-phone js-input validate" type="tel" name="login">
+                     <div class="form-label">Номер телефона</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100p btn-lg">Восстановить
+                     пароль</button>
+
+               </form>
+
+               <div class="fz-13 lh-120 c-gray pt-15 pt-sm-25">Пароль отправлен в СМС сообщении на
+                  указанный номер&nbsp;телефона.</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+   <!--Loader-->
+   <script src="assets/plugins/loader/loader.js"></script>
+   <!--jQueryForm-->
+   <script src="assets/plugins/jquery-form/jquery.form.min.js"></script>
+   <!--bootbox-->
+   <script src="assets/plugins/bootbox/bootbox.min.js"></script>
+   <!--input-mask-->
+   <script src="assets/plugins/inputmask/jquery.maskedinput.min.js"></script>
+   <!--paginiation-->
+   <script src="assets/plugins/pagination/pagination.js"></script>
+   <!--fancybox-->
+   <script src="assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+   <script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+   <script src="libs/swiper/swiper-bundle.min.js"></script>
+   <script src="libs/datatables/datatables.min.js"></script>
+   <script src="libs/bootstrap-fileinput/js/fileinput.min.js"></script>
+   <script src="libs/bootstrap-fileinput/js/locales/ru.js"></script>
+   <script src="libs/bootstrap-select/js/bootstrap-select.min.js"></script>
+   <script src="libs/datepicker-bootstrap/js/datepicker.js"></script>
+   <script src="libs/datepicker-bootstrap/js/datepicker.ru-RU.js"></script>
+   <script src="libs/croppie/croppie.min.js"></script>
+   <script src="libs/jquery.maskedinput.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="assets/js/config.js"></script>
+   <script src="assets/js/init.js"></script>
+   <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
