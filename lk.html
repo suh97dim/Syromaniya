@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Личный кабинет</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!--link type="image/x-icon" href="img/favicon.png" rel="shortcut icon"-->
+
+    <script type="text/javascript" async="" <script src="assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <link href="assets/plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
+    <link href="assets/plugins/loader/loader.css" rel="stylesheet">
+    <link type="text/css" href="assets/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+
+    <link type="text/css" href="libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/datepicker-bootstrap/datepicker.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/datatables/datatables.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link type="text/css" href="libs/croppie/croppie.css" rel="stylesheet">
+    <link type="text/css" href="css/main.min.css" rel="stylesheet">
+
+    <link href="assets/css/my_style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="o-h">
+        <header class="page-header">
+            <div class="container page-header-container">
+                <div class="row jc-sb ai-c page-header-row gx-10">
+                    <div class="col d-xl-n z-1">
+                        <button class="hamburger js-hamburger collapsed" type="button" data-toggle="collapse"
+                            data-target=".page-header-menu"><span class="hamburger-box"><span
+                                    class="hamburger-inner"></span></span></button>
+                    </div>
+                    <div class="col-auto ta-c">
+                        <a href="https://5ka.ru/" target="_blank" rel="noopener"> <img src="img/logo_5ka.png"
+                                srcset="img/logo_5ka_2x.png 2x" alt="Hansa" class="logo-img_1" />
+                        </a>
+                        <a class="" href="https://www.savushkin.by/brendy/brest-litovsk/" target="_blank"
+                            rel="noopener"> <img class="logo-img_1" src="img/logo_brest.png"
+                                srcset="img/logo_brest_2x.png 2x" alt="Hansa" />
+                        </a>
+                    </div>
+                    <div class="col-xl-auto page-header-menu collapse">
+                        <div class="row page-header-nav jc-c mt-10 j">
+                            <div class="page-header-nav__item"><a class="header-nav__link js-scroll-to"
+                                    href="/#front">Главная</a>
+                            </div>
+                            <div class="page-header-nav__item"><a class="header-nav__link js-scroll-to"
+                                    href="/#rules">Правила</a>
+                            </div>
+                            <div class="page-header-nav__item"><a class="header-nav__link js-scroll-to"
+                                    href="/#winners">Победители</a>
+                            </div>
+                            <div class="page-header-nav__item"><a class="header-nav__link js-scroll-to"
+                                    href="/#qa">Вопросы и
+                                    ответы</a></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-auto col ta-r">
+
+                        <a class="aut btn btn-gold page-header-enter-btn" href="#modal-enter" data-toggle="modal"><img
+                                class="img-fluid mr-xl-10" src="img/icons/icon_user.svg" alt="icon" width="15" /><span
+                                class="page-header-enter-btn-title">Личный
+                                кабинет</span></a>
+                    </div>
+                    <div class="is-login row page-header-nav jc-c mt-10 j">
+                        <div class="page-header-nav__item">
+                            <a class="header-nav__link js-scroll-to" href=""><img class="img-fluid mr-xl-10"
+                                    src="img/icons/icon_user.svg" alt="icon" width="15" /> Александр</a>
+                        </div>
+                        <div class="page-header-nav__item"><a class="header-nav__link js-scroll-to" href=""> Выход</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="lk">
+            <div class="front-gradient"></div>
+            <div class="container">
+
+                <img class="lk-img d-sm-b d-n" srcset="img/bg/lk_bg_2x.png 2x" src="img/bg/lk_bg.png" alt="img" />
+                <div class="row jc-c ai-c gx-lg-30 gx-14 mb-md-45 mb-30">
+
+                    <div class="col-auto">
+                        <div class="lk-title title lh-100 mx-5">Личный<br class="d-md-n"> кабинет</div>
+                    </div>
+                </div>
+                <ul class="lk-nav nav row ta-c jc-c mb-lg-55 mb-40 gx-lg-0 gx-10">
+                    <li class="col-md-3 col-sm-6 mb-lg-0 "><a class="lk-nav__link active" href="#tab-1"
+                            data-toggle="tab">Зарегистрировать чек</a></li>
+                    <li class="col-md-3 col-sm-6 mb-lg-0"><a class="lk-nav__link" href="#tab-2" data-toggle="tab">Мои
+                            заявки</a></li>
+                    <li class="col-md-3 col-sm-6 mb-sm-0 "><a class="lk-nav__link" href="#tab-3" data-toggle="tab">Мои
+                            призы</a></li>
+                    <li class="col-md-3 col-sm-6"><a class="lk-nav__link" href="#tab-4" data-toggle="tab">Персональные
+                            данные</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active show" id="tab-1">
+                        <div class="lk-box">
+                            <div class="lk-box__title">Зарегистрировать чек</div>
+                            <div class="row gx-14 jc-c">
+                                <div class="col-auto"> <img class="img-fluid" src="img/icons/icon_clock.svg" alt="icon"
+                                        width="20">
+                                </div>
+                                <div class="col-auto ta-c">
+                                    <div class="c-blue fz-17 lh-120">Проверка чека занимает
+                                        до&nbsp;3-х&nbsp;рабочих&nbsp;дней</div>
+                                </div>
+                            </div>
+                            <div class="step-box">
+                                <div class="lk-step mb-lg-50 mb-30">
+                                    <div class="lk-step-box">Шаг 1. <span class="c-white">Загрузите фото</span></div>
+                                </div>
+                                <div class="row mb-10">
+                                    <div class="col-lg-6 mb-30">
+                                        <div class="file-upload">
+                                            <input class="bootstrap-file-upload" type="file"
+                                                data-browse-on-zone-click="true">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-lg-30 mb-15">
+                                        <div class="fz-24 c-white lh-120 mb-8">К регистрации в Акции принимаются чеки,
+                                            если:
+                                        </div>
+                                        <ul class="list c-white">
+                                            <li>фото чека качественное, чек сфотографирован полностью, не&nbsp;стоит
+                                                загружать фотографию только QR-кода</li>
+                                            <li>данные, указанные на&nbsp;чеке, такие как дата покупки, время покупки,
+                                                итого по&nbsp;сумме чека, №ФН, №ФД, №ФПД введены правильно</li>
+                                            <li>кассовый чек должен быть выбит кассиром в&nbsp;период c&nbsp;14.11.2022
+                                                по&nbsp;18.12.2022</li>
+                                            <li>все символы должны быть четко видны</li>
+                                            <li>наличие QR-кода на&nbsp;кассовом чеке обязательно, он&nbsp;должен быть
+                                                читаемый</li>
+                                            <li>в&nbsp;чеке должно отображаться наименование Акционной продукции</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ta-c">
+                                    <button class="btn btn-primary btn-lg">Далее</button>
+                                </div>
+                            </div>
+                            <div class="step-box">
+                                <div class="lk-step mb-lg-50 mb-30">
+                                    <div class="lk-step-box">Шаг 2. <span class="c-white">Внесение данных чека</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="photo-wrapper pt-xl-46 py-md-40 py-sm-30 py-25 px-15 mb-md-70 mb-sm-60 mb-50 bdrs-10">
+                                    <ul class="nav row gx-10 mb-15 jc-c mb-15">
+                                        <li class="col-auto"> <a class="photo-nav-link active" href="#photo-tab"
+                                                data-toggle="tab">Фото</a></li>
+                                        <li class="col-auto"> <a class="photo-nav-link" href="#camera-tab"
+                                                data-toggle="tab">Камера</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="photo-tab">
+                                            <div class="resizer" id="resizer"></div>
+                                        </div>
+                                        <div class="tab-pane" id="camera-tab"></div>
+                                    </div>
+                                </div>
+                                <div class="fz-md-20 fz-18 ta-c mb-15 lh-120 pt-xl-28 c-gold">Если QR-код
+                                    не&nbsp;распознается и&nbsp;фискальные признаки не&nbsp;считываются,<br>
+                                    то&nbsp;введите данные вручную.</div>
+                                <div class="ta-c mb-md-30 mb-sm-25 mb-20 fz-16"><a class="fz-sm-15 fz-16 link-white"
+                                        href="#modal-check" data-toggle="modal">Где найти фискальные данные на
+                                        чеке?</a></div>
+                                <div class="row gx-10 mb-md-20 mb-15">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group form-group_beige mb-10">
+                                            <input class="form-control js-input" type="text">
+                                            <div class="form-label">№ ФН</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group form-group_beige mb-10">
+                                            <input class="form-control js-input" type="text">
+                                            <div class="form-label">№ ФД</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group form-group_beige mb-10">
+                                            <input class="form-control js-input" type="text">
+                                            <div class="form-label">№ ФП</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group form-group_beige mb-10">
+                                            <input class="form-control js-input" type="text">
+                                            <div class="form-label">Сумма покупки</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group form-group_beige mb-10">
+                                            <input class="form-control js-input" type="text" data-toggle="datepicker">
+                                            <div class="form-label">Дата покупки</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group form-group_beige mb-10">
+                                            <input class="form-control mask-time js-input" type="text">
+                                            <div class="form-label">Время покупки</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ta-c">
+                                    <button class="btn btn-primary btn-lg">Зарегистрировать чек</button>
+                                </div>
+                            </div>
+                            <div class="lk-box__title pt-xl-90 pt-md-60 pt-50">Зарегистрированные чеки</div>
+                            <div class="table-responsive">
+                                <table class="lk-table g-table js-datatable">
+                                    <thead>
+                                        <tr>
+                                            <th>Дата и время</th>
+                                            <th>Номер чека</th>
+                                            <th>ФН/ФД/ФП</th>
+                                            <th>Фото чека</th>
+                                            <th>Статус</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>20.02.2020, 16:30</td>
+                                            <td>№12755246</td>
+                                            <td>383732 / 344546 / ......</td>
+                                            <td> <a class="link-white" href="#">Смотреть </a></td>
+                                            <td>
+                                                <div class="status">В процессе </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>20.02.2020, 16:30</td>
+                                            <td>№12755246</td>
+                                            <td>383732 / 344546 / ......</td>
+                                            <td> <a class="link-white" href="#">Смотреть </a></td>
+                                            <td>
+                                                <div class="status status_success">подтвержден</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>20.02.2020, 16:30</td>
+                                            <td>№12755246</td>
+                                            <td>383732 / 344546 / ......</td>
+                                            <td> <a class="link-white" href="#">Смотреть </a></td>
+                                            <td>
+                                                <div class="status status_success">подтвержден</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>20.02.2020, 16:30</td>
+                                            <td>№12755246</td>
+                                            <td>383732 / 344546 / ......</td>
+                                            <td> <a class="link-white" href="#">Смотреть </a></td>
+                                            <td>
+                                                <div class="status status_canceled">Отклонено<span
+                                                        class="status-tooltip" data-toggle="tooltip" data-html="true"
+                                                        title="Причина отклонения проста"></span></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-2">
+                        <div class="lk-box">
+                            <div class="lk-box__title">Мои заявки</div>
+                            <div class="table-responsive">
+                                <table class="lk-table g-table js-datatable">
+                                    <thead>
+                                        <tr>
+                                            <th>Дата заявки</th>
+                                            <th>Номер заявки</th>
+                                            <th>Дата розыгрыша</th>
+                                            <th>Статус</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>20.02.2020, 16:30</td>
+                                            <td>№12755246</td>
+                                            <td>20.01.2021</td>
+                                            <td>
+                                                <div class="status status_canceled">Отклонено<span
+                                                        class="status-tooltip" data-toggle="tooltip" data-html="true"
+                                                        title="Причина отклонения проста"></span></div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>20.02.2020, 16:30</td>
+                                            <td>№12755246</td>
+                                            <td>20.01.2021</td>
+                                            <td>
+                                                <div class="status status_canceled">Отклонено<span
+                                                        class="status-tooltip" data-toggle="tooltip" data-html="true"
+                                                        title="Причина отклонения проста"></span></div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>20.02.2020, 16:30</td>
+                                            <td>№12755246</td>
+                                            <td>20.01.2021</td>
+                                            <td>
+                                                <div class="status status_canceled">Отклонено<span
+                                                        class="status-tooltip" data-toggle="tooltip" data-html="true"
+                                                        title="Причина отклонения проста"></span></div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>20.02.2020, 16:30</td>
+                                            <td>№12755246</td>
+                                            <td>20.01.2021</td>
+                                            <td>
+                                                <div class="status status_canceled">Отклонено<span
+                                                        class="status-tooltip" data-toggle="tooltip" data-html="true"
+                                                        title="Причина отклонения проста"></span></div>
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab-3">
+                        <div class="lk-box">
+                            <div class="lk-box__title">Мои призы</div>
+                            <div class="lk-box-prize">
+                                <div class="lk-box__title_h3 c-white">Выберите гарантированный приз:</div>
+
+
+                            </div>
+                            <div class=" lk-prizes row justify-content-center align-items-center mx-auto">
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(1)">
+                                    </div>
+                                    <div class="mask" id="mask-1">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(2)">
+                                    </div>
+                                    <div class="mask" id="mask-2">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(3)">
+                                    </div>
+                                    <div class="mask" id="mask-3">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(4)">
+                                    </div>
+                                    <div class="mask" id="mask-4">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(5)">
+                                    </div>
+                                    <div class="mask" id="mask-5">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(6)">
+                                    </div>
+                                    <div class="mask" id="mask-6">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(7)">
+                                    </div>
+                                    <div class="mask" id="mask-7">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(8)">
+                                    </div>
+                                    <div class="mask" id="mask-8">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(9)">
+                                    </div>
+                                    <div class="mask" id="mask-9">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(10)">
+                                    </div>
+                                    <div class="mask" id="mask-10">10 Р</div>
+                                </div>
+                                <script type='text/javascript'>
+                                    function showPrize(prize) {
+                                        console.log(prize)
+                                        let doc = document.getElementById('mask-' + prize)
+                                        doc.style.opacity = 1;
+                                        doc.style.height = '140px'
+                                    }
+                                </script>
+                            </div>
+
+                            <div class="lk-superpize">
+                                <div class="lk-box__title_h3 c-white">Еженедельные и Суперпризы</div>
+                                <div class="superprize-container row justify-content-center align-items-center mx-auto">
+                                    <div class="superprize col-auto">
+                                        <div class="superprize-text">
+                                            <div class="lk-title  ">250 руб <br>
+                                                на счет<br>
+                                                телефона
+                                            </div>
+
+                                        </div>
+                                        <img class="superprize-img" src="img/static/superprize_one.png" alt="img">
+                                    </div>
+                                    <div class="superprize col-auto">
+                                        <div class="superprize-text">
+                                            <div class="lk-title  ">50 000 Р
+                                            </div>
+                                            <button type="submit" class="btn-sm">Заполнить данные</button>
+                                        </div>
+                                        <img class="superprize-img" src="img/static/superprize_two.png" alt="img">
+                                    </div>
+                                    <div class="superprize col-auto">
+                                        <div class="superprize-text">
+                                            <div class="lk-title  ">100 000 Р
+                                            </div>
+                                            <button type="submit" class="btn-sm">Заполнить данные</button>
+                                        </div>
+                                        <img class="superprize-img" src="img/static/superprize_three.png" alt="img">
+                                    </div>
+                                    <div class="superprize col-auto">
+                                        <div class="superprize-text">
+                                            <div class="lk-title  ">250 000 Р
+                                            </div>
+                                            <button type="submit" class="btn-sm">Заполнить данные</button>
+                                        </div>
+                                        <img class="superprize-img" src="img/static/superprize_four.png" alt="img">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div
+                                class="blocked  lk-prizes-blocked row justify-content-center align-items-center mx-auto">
+                                <div class="blocked-bg">
+                                    <img class="" src="img/icons/icon_lock.svg" alt="icon" width="57" />
+                                    <div class="fz-md-20 mt-30  c-gold">Чтобы участовать в акции зарегистрируйте свой
+                                        первый чек</div>
+                                    <div class="mt-20"><a class="btn  btn-white btn-lg pos-r z-1"
+                                            href="upload/rules.pdf" target="_blank">Зарегистрировать чек</a></div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(1)">
+                                    </div>
+                                    <div class="mask" id="mask-1">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(2)">
+                                    </div>
+                                    <div class="mask" id="mask-2">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(3)">
+                                    </div>
+                                    <div class="mask" id="mask-3">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(4)">
+                                    </div>
+                                    <div class="mask" id="mask-4">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(5)">
+                                    </div>
+                                    <div class="mask" id="mask-5">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(6)">
+                                    </div>
+                                    <div class="mask" id="mask-6">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(7)">
+                                    </div>
+                                    <div class="mask" id="mask-7">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(8)">
+                                    </div>
+                                    <div class="mask" id="mask-8">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(9)">
+                                    </div>
+                                    <div class="mask" id="mask-9">10 Р</div>
+                                </div>
+                                <div class="prize-container">
+                                    <div class="prize" onClick="return showPrize(10)">
+                                    </div>
+                                    <div class="mask" id="mask-10">10 Р</div>
+                                </div>
+                                <script type='text/javascript'>
+                                    function showPrize(prize) {
+                                        console.log(prize)
+                                        let doc = document.getElementById('mask-' + prize)
+                                        doc.style.opacity = 1;
+                                        doc.style.height = '140px'
+                                    }
+                                </script>
+                            </div>
+
+                            <div class="lk-superpize-blocked ">
+                                <div class="lk-box__title_h3 c-white">Еженедельные и Суперпризы</div>
+                                <div class="superprize-container row justify-content-center align-items-center mx-auto">
+                                    <div class="superprize col-auto">
+                                        <div class="superprize-text">
+                                            <div class="lk-title  ">250 руб <br>
+                                                на счет<br>
+                                                телефона
+                                            </div>
+
+                                        </div>
+                                        <img class="superprize-img" src="img/static/superprize_one.png" alt="img">
+                                    </div>
+                                    <div class="superprize col-auto">
+                                        <div class="superprize-text">
+                                            <div class="lk-title  ">50 000 Р
+                                            </div>
+                                            <button type="submit" class="btn-sm">Заполнить данные</button>
+                                        </div>
+                                        <img class="superprize-img" src="img/static/superprize_two.png" alt="img">
+                                    </div>
+                                    <div class="superprize col-auto">
+                                        <div class="superprize-text">
+                                            <div class="lk-title  ">100 000 Р
+                                            </div>
+                                            <button type="submit" class="btn-sm">Заполнить данные</button>
+                                        </div>
+                                        <img class="superprize-img" src="img/static/superprize_three.png" alt="img">
+                                    </div>
+                                    <div class="superprize col-auto">
+                                        <div class="superprize-text">
+                                            <div class="lk-title  ">250 000 Р
+                                            </div>
+                                            <button type="submit" class="btn-sm">Заполнить данные</button>
+                                        </div>
+                                        <img class="superprize-img" src="img/static/superprize_four.png" alt="img">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- 
+                            <div class="lk-prizes row">
+                              
+                              
+                                <div class="col-md-6">
+                                    <div class="superpize d-flex jc-xxl-sb  mb-lg-30 align-items-center">
+                                        <div class="lk-box__title text-left c-white  ">50 000 Р
+                                            <btn class="btn-white-sm ">Зарегистрировать чек</btn> 
+                                        </div>
+                                        <img class=" d-sm-b d-n" width="220" srcset="img/static/superprize_one.png 2x"
+                                            src="img/static/front_img.png" />
+                                         
+                                    </div>
+                                </div>
+                             
+                            </div> -->
+
+
+                            <!-- <div class="lk-prizes row">
+                                <div class="col-md-6 row superpize jc-xxl-sb  align-items-center">
+                                    <div class="lk-box__title text-left c-white  ">250 руб <br> cна счет<br> телефона
+                                    </div>
+                                    <img class=" d-sm-b d-n" width="220" srcset="img/static/superprize_one.png 2x"
+                                        src="img/static/front_img.png" />
+
+                                </div>
+                                <div class="col-md-6 row superpize jc-xxl-sb  align-items-center">
+                                    <div class="lk-box__title text-left c-white  ">250 руб <br> cна счет<br> телефона
+                                    </div>
+                                    <img class=" d-sm-b d-n" width="220" srcset="img/static/superprize_one.png 2x"
+                                        src="img/static/front_img.png" />
+
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+                    <div class="tab-pane " id="tab-4">
+                        <div class="lk-box">
+                            <div class="lk-box__title">Персональные данные</div>
+                            <div class="lk-box-top mb-30"><img class="img-fluid lk-box-top__img"
+                                    src="img/static/info.svg" alt="img">
+                                <div class="lk-box-top__text">Для получения приза Вам необходимо заполнить персональные
+                                    данные. Эти&nbsp;данные, в&nbsp;соответствии с&nbsp;законом, требуются для уплаты
+                                    налогов при получении призов, общая стоимость которых <b>превышает 4000 рублей</b>.
+                                </div>
+                            </div>
+                            <div class="lk-box-form">
+                                <!-- <div class="info-message">Заполнить персональные данные</div> -->
+                                <!-- <div class="info-message info-message_bd">
+                                    <div class="row gx-14 jc-c">
+                                        <div class="col-auto"> <img class="img-fluid info-message__icon"
+                                                src="img/icons/icon_refresh.svg" alt="img" width="24">
+                                        </div>
+                                        <div class="col-auto as-c">
+                                            <div class="info-message__text">Ваши данные находятся на проверке</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-message info-message_success">
+                                    <div class="row gx-14 jc-c">
+                                        <div class="col-auto"> <img class="img-fluid info-message__icon"
+                                                src="img/icons/icon_checked.svg" alt="img" width="24">
+                                        </div>
+                                        <div class="col-auto as-c">
+                                            <div class="info-message__text">Персональные данные подтверждены</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-message info-message_cancel">
+                                    <div class="row gx-14 jc-c mb-10">
+                                        <div class="col-auto"> <img class="img-fluid info-message__icon"
+                                                src="img/icons/icon_closed.svg" alt="img" width="24">
+                                        </div>
+                                        <div class="col-auto as-c">
+                                            <div class="info-message__text">Персональные данные не подтверждены</div>
+                                        </div>
+                                    </div>
+                                    <div class="ta-c c-pink2 fz-14">Проверьте данные и отправьте заново или
+                                        обратитесь<br> в <a href="lk.html#" class="link-white">клиентскую поддержку</a>
+                                    </div>
+                                </div> -->
+                                <div class="lk-box__title_h3 pt-lg-50 pt-sm-40 pt-30 ta-l">Регистрационные данные</div>
+                                <div class="row row gx-16">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Фамилия</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Имя</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Отчество</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row  input-row ai-c gx-14">
+                                            <div class="col-auto">Пол:</div>
+                                            <div class="col-auto">
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="radio" name="lk-sex"
+                                                        checked=""><span class="checkbox__text">Муж.</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-auto">
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="radio" name="lk-sex"><span
+                                                        class="checkbox__text">Жен.</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text"
+                                                data-toggle="datepicker">
+                                            <div class="form-label">Дата рождения</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Город проживания</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-20">
+                                            <input class="form-control mask-phone js-input is-invalid" type="tel">
+                                            <div class="form-label">Номер телефона</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-20">
+                                            <input class="form-control js-input" type="text">
+                                            <div class="form-label">E-mail</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn btn-primary btn-lg px-15 w-100p">Сохранить данные</button>
+                                    </div>
+                                </div>
+                                <div class="lk-box__title_h3  pt-lg-50 pt-sm-40 pt-30 ta-l mb-15">Данные для уплаты
+                                    налогов:
+                                </div>
+                                <div class="lk-form-subtitle">Первая страница паспорта</div>
+                                <div class="row gx-16 mb-25">
+                                    <div class="col-md-4">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Серия</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Номер</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text"
+                                                data-toggle="datepicker">
+                                            <div class="form-label">Дата выдачи</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group form-group_beige mb-20">
+                                            <input class="form-control js-input" type="text">
+                                            <div class="form-label">Кем выдан</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-form-subtitle">Адрес прописки</div>
+                                <div class="row gx-16">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Город</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Улица</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">№ дома</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">№ корпуса</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">№ квартиры</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-24 upload-one"><input class="file" type="file"
+                                                data-show-preview="false" data-msg-placeholder="Загрузить файл">
+                                            <div class="upload-label"> Фото паспорта лицевая сторона</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-24 upload-one"><input class="file" type="file"
+                                                data-show-preview="false" data-msg-placeholder="Загрузить файл">
+                                            <div class="upload-label">Фото паспорта, прописка</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">ИНН</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-24 upload-one"><input class="file" type="file"
+                                                data-show-preview="false" data-msg-placeholder="Загрузить файл"></div>
+                                    </div>
+
+
+                                </div>
+                                <div class="lk-form-subtitle">Расчетный счет</div>
+                                <div class="row gx-16">
+                                    <div class="col-md-12">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="number">
+                                            <div class="form-label">Расчетный счет получателя</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">БИК банка</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Банк получателя (наименование банка)</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Город банка</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group form-group_beige mb-24">
+                                            <input class="form-control js-input pr-120" type="text">
+                                            <div class="form-label">Кор. счет</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn btn-primary btn-lg px-15 w-100p">Сохранить данные</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="page-footer-lk ">
+                <div class="container pos-r">
+                    <div class="row jc-c ai-c mb-md-45 ta-c mb-md-30 mb-20">
+
+                        <div class="col-md-3 mb-20"><a class="link-red page-footer-link"
+                                href="mailto: help@priz-maheev.ru">info@promobrest.ru </a></div>
+                        <div class="col-md-6 mb-20"><a class="page-footer-phone" href="tel:8800511098171">
+                                8(800)511 0981 71 </a>
+                        </div>
+                        <div class="col-md-3 mb-20"><a class="btn-download" href="upload/rules.pdf" target="_blank">
+                                <img class="img-fluid mr-15" src="img/icons/icon_download.svg" alt="icon"
+                                    width="48" />Правила
+                                акции </a></div>
+                    </div>
+                    <div class="page-footer-text">Акция проводится на территории Российской Федерации в розничной
+                        торговой сети
+                        "Пятерочка". Период регистрации чеков: с 14.11.2022 по 25.12.2022 по московскому времени.
+                        Организатором
+                        Акции является АО «Оригинал». Информация об организаторе Акции, правилах ее проведения,
+                        товарах-участниках Акции, количестве призов по результатам Акции, сроках, месте и порядке их
+                        получения
+                        размещена на сайте акции https://promobrest.ru/</div>
+                </div>
+                <img class="footer-img d-sm-b d-n" srcset="img/bg/footer_bg.png 2x" src="img/bg/footer_bg.png"
+                    alt="img" />
+            </div>
+            <!-- <img class="footer-img d-sm-b d-n" srcset="img/bg/footer_bg.png 2x" src="img/bg/footer_bg.png" alt="img" /> -->
+    </div>
+    </footer>
+    <div class="modal" id="modal-reg">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"></span></button>
+                    <div class="modal-title">Регистрация</div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group form-group_beige mb-24">
+                                <input class="form-control js-input pr-120" type="text">
+                                <div class="form-label">Фамилия</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group form-group_beige mb-24">
+                                <input class="form-control js-input pr-120" type="text">
+                                <div class="form-label">Имя</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group form-group_beige mb-24">
+                                <input class="form-control js-input pr-120" type="text">
+                                <div class="form-label">Отчество</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row jc-c input-row ai-c gx-14">
+                                <div class="col-auto">Пол:</div>
+                                <div class="col-auto">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="radio" name="sex" checked=""><span
+                                            class="checkbox__text">Муж.</span>
+                                    </label>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="radio" name="sex"><span
+                                            class="checkbox__text">Жен.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group form-group_beige mb-24">
+                                <input class="form-control js-input pr-120" type="text" data-toggle="datepicker">
+                                <div class="form-label">Дата рождения</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group form-group_beige mb-24">
+                                <input class="form-control js-input pr-120" type="text">
+                                <div class="form-label">Город проживания</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group form-group_beige mb-20">
+                                <input class="form-control mask-phone js-input is-invalid" type="tel">
+                                <div class="form-label">Номер телефона</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group form-group_beige mb-20">
+                                <input class="form-control js-input" type="text">
+                                <div class="form-label">E-mail</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox"><span
+                                class="checkbox__text c-gray">Ознакомлен и согласен <a href="#" target="_blank"
+                                    class="link-brown">пользовательским соглашением</a> и&nbsp;<a href="#"
+                                    target="_blank" class="link-brown">политикой
+                                    конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <div class="mb-5">
+                        <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox"><span
+                                class="checkbox__text c-gray">Ознакомлен и согласен с <a href="#" target="_blank"
+                                    class="link-brown">правилами акции</a></span>
+                        </label>
+                    </div>
+                    <div class="mb-5">
+                        <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox"><span class="checkbox__text c-gray">Даю
+                                свое согласие на обработку <a href="#" target="_blank"
+                                    class="link-brown">персональных данных</a></span>
+                        </label>
+                    </div>
+                    <div class="mb-5">
+                        <label class="checkbox">
+                            <input class="checkbox__input" type="checkbox"><span class="checkbox__text c-gray">Мне
+                                уже есть 18 лет</span>
+                        </label>
+                    </div>
+                    <div class="pt-md-30 pt-20">
+                        <button class="btn btn-primary btn-lg modal-btn">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-enter">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"></span></button>
+                    <div class="modal-title">Вход </div>
+                    <div class="form-group form-group_beige mb-20">
+                        <input class="form-control mask-phone js-input is-invalid" type="tel">
+                        <div class="form-label">Номер телефона</div>
+                    </div>
+                    <div class="form-group form-group_beige mb-24">
+                        <input class="form-control js-input pr-120" type="password">
+                        <div class="form-label">Пароль</div><a
+                            class="js-modal form-control-link link-red fz-13 pos-a r-0 mr-15"
+                            href="#modal-recovery">Забыли пароль? </a>
+                    </div>
+                    <button class="btn btn-primary btn-lg modal-btn">Войти</button>
+                    <div class="lh-120 c-gray pt-15 pt-sm-25">Если Вы впервые на сайте, то Вам необходимо <a
+                            class="link-red js-modal" href="#modal-reg">Зарегистрироваться</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-recovery">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"></span></button>
+                    <div class="modal-title modal-title_small">Восстановление пароля</div>
+                    <div class="form-group form-group_beige mb-20">
+                        <input class="form-control mask-phone js-input is-invalid" type="tel">
+                        <div class="form-label">Номер телефона</div>
+                    </div>
+                    <button class="btn btn-primary w-100p btn-lg">Восстановить пароль</button>
+                    <div class="fz-13 lh-120 c-gray pt-15 pt-sm-25">Пароль отправлен в СМС сообщении на указанный
+                        номер&nbsp;телефона.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-success">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body pos-r"><img class="img-fluid modal-success-img"
+                        src="img/static/modal_success_img.png" alt="img">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"></span></button>
+                    <div class="modal-title modal-title_med ta-c pt-sm-50 pt-60">Поздравляем вас!<br> Вы
+                        зарегистрировались в&nbsp;акции</div>
+                    <div class="text-gray fz-14 ta-c mb-30">На указанный вами телефон (+7-900-898-76-76) отправлен
+                        пароль для доступа в личный кабинете</div>
+                    <div class="ta-c">
+                        <btn class="btn btn-primary btn-lg" data-dismiss="modal">Хорошо!</btn>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-check">
+        <div class="modal-dialog modal-dialog-centered ta-c">
+            <div class="modal-content">
+                <div class="modal-body pos-r modal-body_no-px">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"></span></button>
+                    <div class="modal-title px-15 modal-title_small">Фискальные данные</div>
+                    <!-- Фото, где искать -->
+                    <!-- <img class="img-fluid"src="img/static/modal_check.png" alt="img"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bootbox modal bootbox-alert" id="bootbox-hi">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="bootbox-close-button close" data-dismiss="modal" type="button">×</button>
+                    <div class="bootbox-body">hi</div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bb-handler="ok" type="button">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/plugins/loader/loader.js"></script>
+    <script src="assets/plugins/jquery-form/jquery.form.min.js"></script>
+    <script src="assets/plugins/bootbox/bootbox.min.js"></script>
+    <script src="assets/plugins/inputmask/jquery.maskedinput.min.js"></script>
+    <script src="assets/plugins/pagination/pagination.js"></script>
+    <script src="assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/datatables/datatables.min.js"></script>
+    <script src="libs/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="libs/bootstrap-fileinput/js/locales/ru.js"></script>
+    <script src="libs/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="libs/datepicker-bootstrap/js/datepicker.js"></script>
+    <script src="libs/datepicker-bootstrap/js/datepicker.ru-RU.js"></script>
+    <script src="libs/croppie/croppie.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
