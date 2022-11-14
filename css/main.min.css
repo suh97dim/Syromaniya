@@ -172,7 +172,7 @@
   font-family: "Inter", Arial, sans-serif;
   font-weight: 700;
   border: none;
-  margin-top: 40px;
+  margin-top: 25px;
 
   user-select: none;
 
@@ -1531,6 +1531,34 @@ table.dataTable th {
 .lk-superpize {
   margin-top: 60px;
 }
+
+.superprize-subtext{
+  margin-top: 15px;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 120%;
+/* or 24px */
+
+letter-spacing: -1px;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+color: #FCFCFC;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.prize-blocked{
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .lk-superpize-blocked {
   margin-top: 60px;
   opacity: 0.3;

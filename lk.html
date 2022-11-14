@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,6 +22,7 @@
     <link type="text/css" href="css/main.min.css" rel="stylesheet">
     <link href="assets/css/my_style.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="o-h">
         <header class="page-header">
@@ -339,12 +341,12 @@
 
                             </div>
                             <div class=" lk-prizes row justify-content-center align-items-center mx-auto">
-                                <div class="prize-container">
+                                <div class="prize-container ">
                                     <div class="prize" onClick="return showPrize(1)">
                                     </div>
                                     <div class="mask" id="mask-1">10 Р</div>
                                 </div>
-                                <div class="prize-container">
+                                <div class="prize-container ">
                                     <div class="prize" onClick="return showPrize(2)">
                                     </div>
                                     <div class="mask" id="mask-2">10 Р</div>
@@ -401,8 +403,9 @@
 
                             <div class="lk-superpize">
                                 <div class="lk-box__title_h3 c-white">Еженедельные и Суперпризы</div>
-                                <div class="superprize-container row justify-content-center align-items-center mx-auto">
-                                    <div class="superprize col-auto">
+                                <div
+                                    class=" superprize-container  row justify-content-center align-items-center mx-auto">
+                                    <div class="prize-blocked superprize col-auto">
                                         <div class="superprize-text">
                                             <div class="lk-title  ">250 руб <br>
                                                 на счет<br>
@@ -412,11 +415,13 @@
                                         </div>
                                         <img class="superprize-img" src="img/static/superprize_one.png" alt="img">
                                     </div>
-                                    <div class="superprize col-auto">
+                                    <div class="prize-blocked superprize col-auto">
                                         <div class="superprize-text">
                                             <div class="lk-title  ">50 000 Р
                                             </div>
-                                            <button type="submit" class="btn-sm">Заполнить данные</button>
+                                            <div class="superprize-subtext">Дата розыгрыша:<br>
+                                                22 декабря</div>
+                                       
                                         </div>
                                         <img class="superprize-img" src="img/static/superprize_two.png" alt="img">
                                     </div>
@@ -424,7 +429,8 @@
                                         <div class="superprize-text">
                                             <div class="lk-title  ">100 000 Р
                                             </div>
-                                            <button type="submit" class="btn-sm">Заполнить данные</button>
+                                            <div class="superprize-subtext">Дата розыгрыша:<br>
+                                                22 декабря</div>
                                         </div>
                                         <img class="superprize-img" src="img/static/superprize_three.png" alt="img">
                                     </div>
@@ -448,7 +454,7 @@
                                     <div class="mt-20"><a class="btn  btn-white btn-lg pos-r z-1"
                                             href="upload/rules.pdf" target="_blank">Зарегистрировать чек</a></div>
                                 </div>
-                                <div class="prize-container">
+                                <div class="prize-container ">
                                     <div class="prize" onClick="return showPrize(1)">
                                     </div>
                                     <div class="mask" id="mask-1">10 Р</div>
@@ -507,46 +513,7 @@
                                     }
                                 </script>
                             </div>
-                            <div class="lk-superpize-blocked ">
-                                <div class="lk-box__title_h3 c-white">Еженедельные и Суперпризы</div>
-                                <div class="superprize-container row justify-content-center align-items-center mx-auto">
-                                    <div class="superprize col-auto">
-                                        <div class="superprize-text">
-                                            <div class="lk-title  ">250 руб <br>
-                                                на счет<br>
-                                                телефона
-                                            </div>
-
-                                        </div>
-                                        <img class="superprize-img" src="img/static/superprize_one.png" alt="img">
-                                    </div>
-                                    <div class="superprize col-auto">
-                                        <div class="superprize-text">
-                                            <div class="lk-title  ">50 000 Р
-                                            </div>
-                                            <button type="submit" class="btn-sm">Заполнить данные</button>
-                                        </div>
-                                        <img class="superprize-img" src="img/static/superprize_two.png" alt="img">
-                                    </div>
-                                    <div class="superprize col-auto">
-                                        <div class="superprize-text">
-                                            <div class="lk-title  ">100 000 Р
-                                            </div>
-                                            <button type="submit" class="btn-sm">Заполнить данные</button>
-                                        </div>
-                                        <img class="superprize-img" src="img/static/superprize_three.png" alt="img">
-                                    </div>
-                                    <div class="superprize col-auto">
-                                        <div class="superprize-text">
-                                            <div class="lk-title  ">250 000 Р
-                                            </div>
-                                            <button type="submit" class="btn-sm">Заполнить данные</button>
-                                        </div>
-                                        <img class="superprize-img" src="img/static/superprize_four.png" alt="img">
-                                    </div>
-
-                                </div>
-                            </div>
+                        
                         </div>
                     </div>
                     <div class="tab-pane " id="tab-4">
