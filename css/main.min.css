@@ -1198,7 +1198,7 @@ table.dataTable th {
   right: 50%;
   position: absolute;
   transform: translateX(-500px);
-  background: url("../img/static/footer_decor.png") no-repeat center;
+  /* background: url("../img/static/footer_decor.png") no-repeat center; */
 }
 
 @media (max-width: 1199.98px) {
@@ -3237,7 +3237,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 .modal-decor {
   position: absolute;
   right: 0;
-  transform: translate(57%, -67%);
+  transform: translate(28%, 0);
 }
 
 .modal-backdrop {
@@ -3246,10 +3246,11 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 }
 
 .modal-success-img {
-  top: 0;
-  left: 50%;
   position: absolute;
-  transform: translate(-50%, -50%);
+  width: 417px;
+  transform: translate(30%, 0);
+
+  top: 0px;
 }
 
 .modal-body.modal-body_no-px {
@@ -3313,7 +3314,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 @media (max-width: 767.98px) {
   .modal-success-img {
-    width: 180px;
+    width: 300px;
+    transform: translate(10%, 0);
   }
 
   .modal-title {
@@ -6043,6 +6045,10 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 .m-10 {
   margin: 10px !important;
+}
+
+.mt-succes{
+  margin-top: 130px;
 }
 
 .mt-10,
